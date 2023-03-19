@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{mp_sketching}
+\author{Seamus Chang}
+\date{March 2023}
+
+\documentclass{article}
+\usepackage{multirow}
+\begin{document}
+\begin{table}[ht]
+\centering
+\begin{subtable}{\textwidth}
+\centering
+\caption{Raw Data Jaccard Similarity}
+\vspace{0.25cm}
+\begin{tabular}{|c|c|c|c|c|p{1.8cm}|}
+\hline
+{} &     Adele &    Bieber &  BrunoMars &  MichaelJackson &   Rihanna \\
+\hline
+Adele          &  1.000000 &  0.289405 &   0.282754 &        0.220419 &  0.298828 \\
+Bieber         &  0.289405 &  1.000000 &   0.307293 &        0.240516 &  0.312150 \\
+BrunoMars      &  0.282754 &  0.307293 &   1.000000 &        0.237779 &  0.306157 \\
+MichaelJackson &  0.220419 &  0.240516 &   0.237779 &        1.000000 &  0.246271 \\
+Rihanna        &  0.298828 &  0.312150 &   0.306157 &        0.246271 &  1.000000 \\
+\hline
+\end{tabular}
+\end{subtable}
+\begin{subtable}{\textwidth}
+\centering
+\caption{MinHash Jaccard Similarity}
+\vspace{0.25cm}
+\begin{tabular}{|c|c|c|c|c|p{1.8cm}|}
+\hline
+{} &     Adele &    Bieber &  BrunoMars &  MichaelJackson &   Rihanna \\
+\hline
+Adele          &  1.000000 &  0.289405 &   0.282754 &        0.220490 &  0.298828 \\
+Bieber         &  0.289405 &  1.000000 &   0.307293 &        0.239389 &  0.312150 \\
+BrunoMars      &  0.282754 &  0.307293 &   1.000000 &        0.237794 &  0.306157 \\
+MichaelJackson &  0.220490 &  0.239389 &   0.237794 &        1.000000 &  0.245905 \\
+Rihanna        &  0.298828 &  0.312150 &   0.306157 &        0.245905 &  1.000000 \\
+\hline
+\end{tabular}
+\end{subtable}
+\begin{subtable}{\textwidth}
+\centering
+\caption{Bloom Filter Jaccard Similarity}
+\vspace{0.25cm}
+\begin{tabular}{|c|c|c|c|c|p{1.8cm}|}
+\hline
+{} &     Adele &    Bieber &  BrunoMars &  MichaelJackson &   Rihanna \\
+\hline
+Adele          &  1.000000 &  0.342289 &   0.335462 &        0.284230 &  0.347746 \\
+Bieber         &  0.342289 &  1.000000 &   0.369238 &        0.332527 &  0.378007 \\
+BrunoMars      &  0.335462 &  0.369238 &   1.000000 &        0.325218 &  0.372452 \\
+MichaelJackson &  0.284230 &  0.332527 &   0.325218 &        1.000000 &  0.330319 \\
+Rihanna        &  0.347746 &  0.378007 &   0.372452 &        0.330319 &  1.000000 \\
+\hline
+\end{tabular}
+\end{subtable}
+\end{table}
+\end{document}
